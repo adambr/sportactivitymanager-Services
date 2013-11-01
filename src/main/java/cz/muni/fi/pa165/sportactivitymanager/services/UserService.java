@@ -14,7 +14,7 @@ import java.util.List;
  */
 public interface UserService {
 /**
-     * Creates new User
+     * Creates new UserDto
      * 
      * @param userDto User that we store.
      * @throws IllegalArgumentException when argument is not instance of User class. 
@@ -23,7 +23,7 @@ public interface UserService {
     void create(UserDTO userDto);
     
     /**
-     * Find existing User
+     * Find existing UserDto
      * 
      * @param id is ID of User that we want getByID.
      * @throws IllegalArgumentException when ID is NULL. 
@@ -32,7 +32,7 @@ public interface UserService {
     UserDTO getByID(Long id);
     
     /**
-     * Delete existing User
+     * Delete existing UserDto
      * 
      * @param userDto is a userDto that we want to delete.
      * @throws IlleagalArgumentException when given userDto does not exist.
@@ -42,7 +42,7 @@ public interface UserService {
     void delete(UserDTO userDto);
     
     /**
-     * Update existing User
+     * Update existing UserDto
      * 
      * @param userDto is a userDto that we want to update.
      * @throws IlleagalArgumentException when given userDto does not exist.
@@ -52,10 +52,10 @@ public interface UserService {
     void update(UserDTO userDto);
     
     /**
-     * Find all existing Users
+     * Find all existing UserDTOs
      * 
      * @param nothing
-     * @return List of all Users
+     * @return List of all UserDTOs
      */
     List<UserDTO> findAll();
        

@@ -1,5 +1,6 @@
 package cz.muni.fi.pa165.sportactivitymanager.services;
 
+import static junit.framework.Assert.assertTrue;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
